@@ -14,7 +14,7 @@ def welcome():
          
     p = gTranslator.translate(text, dest=lang)
     
-    return jsonify(phrase= text , pr= p.pronunciation)
+    return jsonify(phrase= gtranslation.text , pr= p.pronunciation)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=105)
